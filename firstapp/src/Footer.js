@@ -3,7 +3,7 @@ import './App.css';
 
 function Footer(){
     return(
-        <footer>
+        <footer style={{border: "8px solid blue"}}>
             <p>Jay Boyd</p>
         </footer>
     );

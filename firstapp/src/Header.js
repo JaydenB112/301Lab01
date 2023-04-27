@@ -3,7 +3,7 @@ import './App.css';
 
 function Header(){
     return(
-        <h1>
+        <h1 style={{border: "8px solid red"}} >
             My Header
          </h1>
     );
