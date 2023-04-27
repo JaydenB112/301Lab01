@@ -11,6 +11,7 @@ function HornedBeast(props) {
     // This ternary statement makes sure my heart turns color when clicked
     return (
 // This function is setting an onclick and incrementing the amount of clicks every time it's clicked
+// I'm sorry I'm just a little excited
         <div style={{ border: "3px solid purple" }}>
             <img width={200} src={props.imageUrl} alt='' />
             <h1>{props.description}</h1>
