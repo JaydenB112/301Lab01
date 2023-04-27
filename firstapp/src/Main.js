@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import HornedBeast from './HornedBeast';
 import beastGallery from './data.json'
-
+// Importing all the goods  from where they need to be, specifically beastGallery, an array of objects so i don't have to display them one by one.
 function Main() {
     const [imageLiked, setImageLikes] = useState(false)
     const [likes, setLikes] = useState(0)
