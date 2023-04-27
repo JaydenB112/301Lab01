@@ -8,9 +8,9 @@ function HornedBeast(props) {
     const [likes, setLikes] = useState(0)
     let heart = '🖤'
     heart = imageLiked ? '❤️' : heart
-    
+    // This ternary statement makes sure my heart turns color when clicked
     return (
-
+// This function is setting an onclick and incrementing the amount of clicks every time it's clicked
         <div style={{ border: "3px solid purple" }}>
             <img width={200} src={props.imageUrl} alt='' />
             <h1>{props.description}</h1>
