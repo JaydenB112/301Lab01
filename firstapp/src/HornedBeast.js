@@ -1,6 +1,7 @@
 import React from 'react';
 import Main from './Main'
 import {useState} from 'react';
+import { Button } from 'react-bootstrap';
 
 
 function HornedBeast(props) {
@@ -13,7 +14,13 @@ function HornedBeast(props) {
 // This function is setting an onclick and incrementing the amount of clicks every time it's clicked
 // I'm sorry I'm just a little excited
         <div style={{ border: "3px solid purple" }}>
-            <img width={200} src={props.imageUrl} alt='' />
+            <img onClick={function(){
+  
+                       props.setShow(true)
+                       props.setCurrentSelectedBeasts(props.description)
+                       props.setDisplaySelectedBeasts(props.imageUrl)
+                      }}
+            width={200} src={props.imageUrl} alt='' />
             <h1>{props.description}</h1>
             <h3>{likes}</h3>
             <h1 onClick={function () {
