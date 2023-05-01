@@ -7,7 +7,7 @@ import beastGallery from './data.json'
 import { useState } from 'react';
 import { Modal, Button } from 'react-bootstrap'
 import 'bootstrap/dist/css/bootstrap.min.css';   
-function App(props) {
+function App() {
   const [show, setShow] = useState(true)
   const [displaySelectedBeasts, setDisplaySelectedBeasts] = useState(false)
   const [currentSelectedBeasts, setCurrentSelectedBeasts] = useState(undefined)
@@ -16,8 +16,9 @@ function App(props) {
       <Modal show={show} onHide={function () {
         setShow(false)
       }}>
-        <h1>{currentSelectedBeasts}</h1>
-        <h1>{displaySelectedBeasts}</h1>
+        <h1></h1>
+        <img src={displaySelectedBeasts} alt=''></img>
+        <h3>{currentSelectedBeasts}</h3>
       </Modal> 
       {/* <Button onClick={function(){
         setShow(true)

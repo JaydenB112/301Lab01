@@ -11,7 +11,7 @@ function Main(props) {
     
     function beastMap(value,index){
         console.log("Log",value)
-        return <HornedBeast  beastMap={value} setDisplaySelectedBeasts={props.setDisplaySelectedBeasts} setCurrentSelectedBeasts={props.setCurrentSelectedBeasts} setShow={props.setShow} imageUrl ={value.image_url} description ={value.description} keyword ={value.keyword}  />
+        return <HornedBeast  beastGallery={value} setDisplaySelectedBeasts={props.setDisplaySelectedBeasts} setCurrentSelectedBeasts={props.setCurrentSelectedBeasts} setShow={props.setShow} imageUrl ={value.image_url} description ={value.description} keyword ={value.keyword}  />
     }
     return (
         <main style={{ border: "8px solid green" }}>
