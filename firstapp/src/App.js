@@ -28,7 +28,7 @@ function App() {
       }>
       Launch</Button> */}
       <Header />
-      <Main setShow={setShow} setCurrentSelectedBeasts={setCurrentSelectedBeasts} setDisplaySelectedBeasts={setDisplaySelectedBeasts}/>
+      <Main  filterFunction={filterFunction} setShow={setShow} setCurrentSelectedBeasts={setCurrentSelectedBeasts} setDisplaySelectedBeasts={setDisplaySelectedBeasts}/>
       <Footer />
     </div>
 

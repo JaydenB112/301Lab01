@@ -10,8 +10,8 @@ function Example() {
 
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
-
-    return (
+}
+    // return (
     //     <>
     //       <Button variant="primary" onClick={handleShow}>
     //         Launch demo modal
@@ -35,5 +35,5 @@ function Example() {
     //   );
     
 // }
-render(<Example />);
+// render(<Example />);
 
