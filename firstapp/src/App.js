@@ -14,9 +14,9 @@ function App() {
   const [displaySelectedBeasts, setDisplaySelectedBeasts] = useState(false)
   const [currentSelectedBeasts, setCurrentSelectedBeasts] = useState(undefined)
   const [filter, filterFunction] = useState("")
-  return (
+  return (   
     <div className="App">
-      <Form.Select onChange={function(event){
+      {/* <Form.Select onChange={function(event){
         filterFunction(event.target.value  )
       }}aria-label="Default select example">
 
@@ -25,7 +25,7 @@ function App() {
         <option value="One">One</option>
         <option value="Two">Two</option>
         <option value="Three">Three</option>
-      </Form.Select>
+      </Form.Select> */}
       <header className='App-Header'>
       <h1>{filter}</h1>
 
